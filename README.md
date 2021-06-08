@@ -1,5 +1,7 @@
 # Store Front
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/85dfdba8-5e73-409a-9854-981f901e7d1b/deploy-status)](https://app.netlify.com/sites/storefront-ep/deploys)
+
 [Delployed Site](https://storefront-ep.netlify.app/)
 
 [Pull Request #1](https://github.com/S2Mackinley/storefront/pull/1)
