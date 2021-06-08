@@ -1,8 +1,8 @@
 # Store Front
 
-[Delployed Site]()
+[Delployed Site](https://storefront-ep.netlify.app/)
 
-[Pull Request #1]()
+[Pull Request #1](https://github.com/S2Mackinley/storefront/pull/1)
 
 [Pull Request #2]()
 
