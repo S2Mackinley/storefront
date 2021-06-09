@@ -7,6 +7,7 @@ let initialState = {
 			category: 'electronics',
 			price: 399.99,
 			inStock: 25,
+			count: 0,
 		},
 
 		{
@@ -16,6 +17,7 @@ let initialState = {
 			category: 'electronics',
 			price: 650.0,
 			inStock: 15,
+			count: 0,
 		},
 
 		{
@@ -25,6 +27,7 @@ let initialState = {
 			category: 'electronics',
 			price: 2999.0,
 			inStock: 3,
+			count: 0,
 		},
 
 		{
@@ -34,6 +37,7 @@ let initialState = {
 			category: 'electronics',
 			price: 99.99,
 			inStock: 5,
+			count: 0,
 		},
 
 		{
@@ -43,6 +47,7 @@ let initialState = {
 			category: 'electronics',
 			price: 12.0,
 			inStock: 10,
+			count: 0,
 		},
 
 		{
@@ -52,6 +57,7 @@ let initialState = {
 			category: 'electronics',
 			price: 299.99,
 			inStock: 500,
+			count: 0,
 		},
 
 		{
@@ -61,6 +67,7 @@ let initialState = {
 			category: 'food',
 			price: 5.99,
 			inStock: 969,
+			count: 0,
 		},
 
 		{
@@ -70,6 +77,7 @@ let initialState = {
 			category: 'food',
 			price: 1.99,
 			inStock: 1,
+			count: 0,
 		},
 
 		{
@@ -88,6 +96,7 @@ let initialState = {
 			category: 'food',
 			price: 0.99,
 			inStock: 48,
+			count: 0,
 		},
 
 		{
@@ -97,6 +106,7 @@ let initialState = {
 			category: 'food',
 			price: 12.99,
 			inStock: 18,
+			count: 0,
 		},
 
 		{
@@ -106,9 +116,18 @@ let initialState = {
 			category: 'food',
 			price: 5.99,
 			inStock: 90,
+			count: 0,
+		},
+		{
+			_id: '5f1a5faf1910080017657ed14',
+			name: 'Cheese',
+			url: 'https://images.pexels.com/photos/821365/pexels-photo-821365.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+			category: 'food',
+			price: 5.99,
+			inStock: 90,
+			count: 0,
 		},
 	],
-	count: 0,
 };
 
 const products = (state = initialState, action) => {
@@ -120,24 +139,38 @@ const products = (state = initialState, action) => {
 			);
 			return { products, count: state.count };
 		case 'INCREMENT':
-			const count = state.count + 1;
-			return { products: state.products, count };
+			let productList = state.products.map((product) =>
+				payload.name === product.name
+					? {
+							_id: product._id,
+							name: product.name,
+							url: product.url,
+							category: product.category,
+							price: product.price,
+							inStock: product.inStock - 1,
+							count: product.count + 1,
+					  }
+					: product
+			);
+			return { product: productList };
+		case 'DECREMENT':
+			let newProducts = state.products.map((product) =>
+				payload.name === product.name
+					? {
+							_id: product._id,
+							name: product.name,
+							url: product.url,
+							category: product.category,
+							price: product.price,
+							inStock: product.inStock + payload.count + 1,
+							count: product.count - payload.count - 1,
+					  }
+					: product
+			);
+			return { products: newProducts };
 		default:
 			return state;
 	}
 };
 
 export default products;
-
-export const active = (categoryName) => {
-	return {
-		type: 'ACTIVE',
-		payload: categoryName,
-	};
-};
-
-export const increment = () => {
-	return {
-		type: 'INCREMENT',
-	};
-};
