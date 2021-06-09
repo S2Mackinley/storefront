@@ -20,11 +20,11 @@ const Store = (props) => {
 				<Container>
 					<Categories />
 					<br></br>
-					<Typography component="p" variant="h5" align="center" color="textSecondary">
-						{description}
-					</Typography>
 					<Typography component="p" variant="h3" align="center" color="dark">
 						{category}
+					</Typography>
+					<Typography component="p" variant="h5" align="center" color="textSecondary">
+						{description}
 					</Typography>
 				</Container>
 			</div>

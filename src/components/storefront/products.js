@@ -10,7 +10,7 @@ import {
 	Button,
 	makeStyles,
 } from '@material-ui/core/';
-import { increment } from '../../store/products';
+import { increment } from '../../store/actions';
 
 const useStyles = makeStyles((theme) => ({
 	cardGrid: {
