@@ -1,7 +1,7 @@
 import { AppBar, Typography, Toolbar, Link, Grid } from '@material-ui/core/';
-import SimpleCart from '../cart/simpleCart';
+import SimpleCart from './cart';
 
-function Header() {
+const Header = () => {
 	return (
 		<AppBar position="relative" color="white">
 			<Toolbar>
@@ -16,6 +16,6 @@ function Header() {
 			</Toolbar>
 		</AppBar>
 	);
-}
+};
 
 export default Header;
