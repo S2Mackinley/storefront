@@ -3,7 +3,7 @@ let initialState = {
 		{
 			name: 'food',
 			display_name: 'Food',
-			description: 'Yummy Foods',
+			description: 'Tasty Treats',
 		},
 		{
 			name: 'electronics',

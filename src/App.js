@@ -1,6 +1,6 @@
-import Header from './components/header/header';
-import Footer from './components/footer/footer';
-import Store from './components/storefront/storefront';
+import Header from './components/header';
+import Footer from './components/footer';
+import Store from './components/storefront';
 
 const App = () => {
 	return (

@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "_id": "5f1a51f01910080017657ed2",
+      "name": "xbox",
+      "url": "https://images.pexels.com/photos/4491606/pexels-photo-4491606.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "category": "electronics",
+      "price": 399.99,
+      "inStock": 0,
+      "count": 0
+    },
+    {
+      "_id": "5f1a51f71910080017657ed3",
+      "name": "Apple M1 Laptop",
+      "url": "https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "category": "electronics",
+      "price": 699.99,
+      "inStock": 3,
+      "count": 0
+    },
+    {
+      "_id": "5f1a51ff1910080017657ed4",
+      "name": "tv",
+      "url": "https://images.pexels.com/photos/2728255/pexels-photo-2728255.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "category": "electronics",
+      "price": 99.0,
+      "inStock": 15,
+      "count": 0
+    },
+    {
+      "_id": "5f1a52031910080017657ed5",
+      "name": "Hipster Toast",
+      "url": "https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "category": "food",
+      "price": 19.0,
+      "inStock": 25,
+      "count": 0
+    },
+    {
+      "_id": "5f1a5f861910080017657ed7",
+      "name": "Pans of Cake",
+      "url": "https://images.pexels.com/photos/357573/pexels-photo-357573.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "category": "food",
+      "price": 12.0,
+      "inStock": 99999,
+      "count": 0
+    },
+    {
+      "_id": "5f1a5f761910080017657ed6",
+      "name": "Fries",
+      "url": "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "category": "food",
+      "price": 0.00,
+      "inStock": 500,
+      "count": 0
+    }
+  ]
+}
